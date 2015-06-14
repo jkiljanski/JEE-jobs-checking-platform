@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+
+	<persistence-unit name="testPU">
+
+		<!-- This data source is defined from within the application via the data-source element in web.xml -->
+		<jta-data-source>java:app/MyApp/MyDS</jta-data-source>
+
+		<properties>
+			<!--
+					Very unfortunate workaround to get the data source to work with JPA in WildFly 8.
+					See https://issues.jboss.org/browse/WFLY-2727
+				-->
+			<property name="wildfly.jpa.twophasebootstrap" value="false" />
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />
+		</properties>
+	</persistence-unit>
+
+	<!--<persistence-unit name="NewPersistenceUnit">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<properties>
+			<property name="hibernate.connection.url" value=""/>
+			<property name="hibernate.connection.driver_class" value=""/>
+			<property name="hibernate.connection.username" value=""/>
+			<property name="hibernate.connection.password" value=""/>
+			<property name="hibernate.archive.autodetection" value="class"/>
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.format_sql" value="true"/>
+			<property name="hbm2ddl.auto" value="update"/>
+		</properties>
+	</persistence-unit>-->
+</persistence>
