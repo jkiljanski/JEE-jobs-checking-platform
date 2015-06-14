@@ -26,12 +26,12 @@ Technologie:
 
 Stworzylem zestaw kart CRC (Candidate, Responsibility, Colaborators - ostatnie do uzupelnienia):
 
-###### JobsPluginManager
 Candidate | Responsibilities | Colaborators
 --- | --- | ---
 JobsPluginManager | <ul><li>list available plugins</li><li>(?) test plugins</li><li>create instances of the plugins</li><li>(stateful?, per person?)</li></ul> | ?
 View | <ul><li>present session status</li><li>create, close, browse sessions</li><li>present reports</li></ul> | ?
 Session Management | <ul><li>sessions states</li><li>create  session scenarios</li></ul> | ?
-UserManagement | <ul></ul>
-UserManagement | <ul></ul>
-UserManagement | <ul></ul>
+UserManagement | <ul><li>CRUD  persons (per session)</li><li>give user statistics</li><li>create user   ids</li></ul> | ?
+Jobs API | <ul><li>give userId</li><li>report events (success/failures)</li><li>report partial successes(?)</li><li>give additional events (?)</li></ul> | ?
+View API | <ul><li>sending session status</li><li>sending reports</li><li>list sessions</li><li>available to change sessions</li></ul> | ?
+Statistics Manager | <ul><li>collect successes</li><li>collect failures (?)</li><li>generate report</li></ul> | ?
