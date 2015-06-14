@@ -35,3 +35,5 @@ UserManagement | <ul><li>CRUD  persons (per session)</li><li>give user statistic
 Jobs API | <ul><li>give userId</li><li>report events (success/failures)</li><li>report partial successes(?)</li><li>give additional events (?)</li></ul> | ?
 View API | <ul><li>sending session status</li><li>sending reports</li><li>list sessions</li><li>available to change sessions</li></ul> | ?
 Statistics Manager | <ul><li>collect successes</li><li>collect failures (?)</li><li>generate report</li></ul> | ?
+
+Bedziemy realizowac tych kandydatow. Zaczynamy od platformy do rejestracji uczestnikow.
